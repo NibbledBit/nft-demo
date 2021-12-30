@@ -1,0 +1,23 @@
+{
+    "name": "Nibbled Bit",
+    "description": "Scoffy scoffy, scoff scoff!",
+    "image": "ipfs://QmNuavXr8kQ6Ph8ZK6Tk8u73zBvqziaFU4LJdEuaDHGc78",
+    "attributes": [
+        {
+            "trait_type": "Happy",
+            "value": 75
+        },
+        {
+            "trait_type": "Trolling",
+            "value": 50
+        },
+        {
+            "trait_type": "GitHub",
+            "value": "https://github.com/NibbledBit/"
+        },
+        {
+            "trait_type": "WordPress",
+            "value": "https://bitofanibble.wordpress.com/"
+        }
+    ]
+}
