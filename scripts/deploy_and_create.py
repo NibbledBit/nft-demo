@@ -1,7 +1,8 @@
 from brownie import SimpleCollectible, network
 from scripts.helpful_scripts import get_account
 
-sample_token_uri = ""
+sample_token_uri = "https://ipfs.io/ipfs/QmQa8aG7LpyGMGB2WECMruePnRif2aSTHHXvdGoB3zX8Pr?filename=nibbles.json"
+OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
 
 def deploy_simple_collectible():
@@ -20,11 +21,21 @@ def deploy_simple_collectible():
     #     deploy_mocks()
     #     price_feed_address = MockV3Aggregator[-1].address
     # deploying contracts
-    print("Deploying SimpleCollectible")
-    simple_collectible = SimpleCollectible.deploy({"from": account})
-
+    if len(SimpleCollectible) <= 0:
+        print("Deploying SimpleCollectible")
+        simple_collectible = SimpleCollectible.deploy({"from": account})
+    else:
+        simple_collectible = SimpleCollectible[-1]
     print(f"Contract deployed to {simple_collectible}")
     print(f"Token Counter: {simple_collectible.tokenCounter()}")
+
+    tx = simple_collectible.createCollectible(sample_token_uri, {"from": account})
+    tx.wait(1)
+
+    print(
+        f"NFT will be viewable at: {OPENSEA_URL.format(simple_collectible.address, simple_collectible.tokenCounter()-1)}"
+    )
+
     return simple_collectible
 
 
