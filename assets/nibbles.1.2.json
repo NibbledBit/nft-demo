@@ -1,0 +1,23 @@
+{
+    "name": "Nibbled Bit",
+    "description": "Scoffy scoffy, scoff scoff!",
+    "image": "https://raw.githubusercontent.com/NibbledBit/nft-demo/master/assets/Nibbles.jpg",
+    "attributes": [
+        {
+            "trait_type": "Happy",
+            "value": 75
+        },
+        {
+            "trait_type": "Trolling",
+            "value": 50
+        },
+        {
+            "trait_type": "GitHub",
+            "value": "https://github.com/NibbledBit/"
+        },
+        {
+            "trait_type": "WordPress",
+            "value": "https://bitofanibble.wordpress.com/"
+        }
+    ]
+}

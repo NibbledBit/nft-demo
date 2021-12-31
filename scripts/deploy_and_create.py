@@ -1,7 +1,7 @@
 from brownie import SimpleCollectible, network
 from scripts.helpful_scripts import get_account
 
-sample_token_uri = "https://ipfs.io/ipfs/QmRCN6gN4eqx2W3sxmLTojbvZEbRbXKsDQnwaASyM7pZbN?filename=nibbles.1.1.json"
+sample_token_uri = "https://ipfs.io/ipfs/QmVYX1BgugoHzNFsprZHanEYkhWUopUtHmrHsAmTCReABG?filename=nibbles.1.2.json"
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
 
