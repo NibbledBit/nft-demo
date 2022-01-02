@@ -1,0 +1,15 @@
+{
+    "name": "Tatted Nibbles",
+    "description": "I wouldn't mess with this Nibbles if I was you, some call him Iron Nibbles!",
+    "image": "ipfs://QmSco24UoKwBkzUscFBh4UBM4j99wPJsATsPCh1jyCAqmX",
+    "attributes": [
+        {
+            "trait_type": "Iron",
+            "value": 95
+        },
+        {
+            "trait_type": "Hard",
+            "value": 100
+        }
+    ]
+}

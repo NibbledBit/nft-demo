@@ -1,15 +1,15 @@
 {
     "name": "Nibbled Bit",
-    "description": "Scoffy scoffy, scoff scoff!",
+    "description": "Plain old Nibbled Bit, some call him plain others call him the original.",
     "image": "ipfs://QmNuavXr8kQ6Ph8ZK6Tk8u73zBvqziaFU4LJdEuaDHGc78",
     "attributes": [
         {
-            "trait_type": "Happy",
-            "value": 75
+            "trait_type": "Original",
+            "value": 100
         },
         {
-            "trait_type": "Trolling",
-            "value": 50
+            "trait_type": "Happy Go Lucky",
+            "value": 75
         },
         {
             "trait_type": "GitHub",

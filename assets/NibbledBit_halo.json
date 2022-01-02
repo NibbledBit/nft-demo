@@ -1,0 +1,15 @@
+{
+    "name": "Angelic Nibbles",
+    "description": "This angelic Nibbled Bit has been in the good graces of God!",
+    "image": "ipfs://QmR3oCWZmyX57Y8rFxn73sSEzEcEWiC8pu8Csawvts5ipW",
+    "attributes": [
+        {
+            "trait_type": "Good",
+            "value": 100
+        },
+        {
+            "trait_type": "Bad",
+            "value": 5
+        }
+    ]
+}

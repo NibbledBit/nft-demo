@@ -1,0 +1,15 @@
+{
+    "name": "Cool Nibbles",
+    "description": "The coolest Nibbles of them all, this Nibbled Bit can drive facing the sun!",
+    "image": "ipfs://QmRBBhgr153wMRApmoFn9cStLHHNt8k1hR2f3CRGpQYXG1",
+    "attributes": [
+        {
+            "trait_type": "Cool",
+            "value": 95
+        },
+        {
+            "trait_type": "Good Driver",
+            "value": 90
+        }
+    ]
+}
