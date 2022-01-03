@@ -1,11 +1,11 @@
 from brownie import network
-from scripts import deploy_and_create
+from scripts.SimpleCollectible import deploy_and_create
 from scripts.helpful_scripts import (
     LOCAL_BLOCKCHAIN_ENVIRONMENTS,
     get_account,
     get_publish_account,
 )
-from scripts.deploy_and_create import deploy_simple_collectible
+from scripts.SimpleCollectible.deploy_and_create import deploy_simple_collectible
 import pytest
 
 
