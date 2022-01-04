@@ -1,4 +1,4 @@
-from brownie import SimpleCollectible, network
+from brownie import SimpleCollectible, network, config
 from scripts.helpful_scripts import get_account, OPENSEA_URL
 
 sample_token_uri = "https://ipfs.io/ipfs/QmVYX1BgugoHzNFsprZHanEYkhWUopUtHmrHsAmTCReABG?filename=nibbles.1.2.json"
@@ -22,7 +22,10 @@ def deploy_simple_collectible():
     # deploying contracts
     if len(SimpleCollectible) <= 0:
         print("Deploying SimpleCollectible")
-        simple_collectible = SimpleCollectible.deploy({"from": account})
+        simple_collectible = SimpleCollectible.deploy(
+            {"from": account},
+            publish_source=config["networks"][network.show_active()].get("verify"),
+        )
     else:
         simple_collectible = SimpleCollectible[-1]
     print(f"Contract deployed to {simple_collectible}")

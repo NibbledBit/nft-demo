@@ -34,6 +34,7 @@ def deploy_advanced_collectible():
         config["networks"][network.show_active()]["keyhash"],
         config["networks"][network.show_active()]["fee"],
         {"from": account},
+        publish_source=config["networks"][network.show_active()].get("verify"),
     )
     print(f"Contract deployed to {advanced_collectible}")
     print(f"Token Counter: {advanced_collectible.tokenCounter()}")

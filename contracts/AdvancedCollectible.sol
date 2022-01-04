@@ -9,6 +9,8 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     uint256 public tokenCounter;
     bytes32 public keyhash;
     uint256 public fee;
+
+    uint256 public lastRandom;
     enum Trait {
         Plain,
         Halo,
@@ -65,7 +67,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
 
         _setTokenURI(tokenCounter, traitToIpfs[trait]);
 
-        tokenCounter += 1;
+        tokenCounter = tokenCounter + 1;
     }
 
     function setTokenURI(uint256 tokenId, string memory _tokenURI) public {
