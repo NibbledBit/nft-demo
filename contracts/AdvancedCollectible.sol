@@ -11,6 +11,7 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
     uint256 public fee;
 
     uint256 public lastRandom;
+    string public lastTokenUri;
     enum Trait {
         Plain,
         Halo,
@@ -65,7 +66,10 @@ contract AdvancedCollectible is ERC721, VRFConsumerBase {
         address owner = requestIdToSender[requestId];
         _safeMint(owner, newTokenId);
 
-        _setTokenURI(tokenCounter, traitToIpfs[trait]);
+        lastRandom = randomNumber;
+        string memory tstTokenUri = traitToIpfs[trait];
+        lastTokenUri = tstTokenUri;
+        _setTokenURI(tokenCounter, tstTokenUri);
 
         tokenCounter = tokenCounter + 1;
     }

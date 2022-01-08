@@ -14,6 +14,12 @@ STARTING_PRICE = 411200000000
 
 OPENSEA_URL = "https://testnets.opensea.io/assets/{}/{}"
 
+TRAIT_MAPPING = {0: "Plain", 1: "Halo", 2: "Sunglasses", 3: "Tattoo"}
+
+
+def get_trait(trait_number):
+    return TRAIT_MAPPING[trait_number]
+
 
 def get_publish_account():
     if (

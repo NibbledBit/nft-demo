@@ -44,11 +44,7 @@ def deploy_advanced_collectible():
     tx = advanced_collectible.createCollectible({"from": account})
     tx.wait(1)
 
-    print(
-        f"NFT will be viewable at: {OPENSEA_URL.format(advanced_collectible.address, advanced_collectible.tokenCounter()-1)}"
-    )
-
-    return advanced_collectible
+    return advanced_collectible, tx
 
 
 def main():
